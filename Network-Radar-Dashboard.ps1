@@ -318,7 +318,7 @@ try {
         foreach ($Res in $SortedResults) {
             $Class = if ($Res.Status) { "online" } else { "offline" }
             $NameStr = if ($Res.Name) { $Res.Name } else { "-" }
-            $NameStr = $NameStr -replace "\.suryapi\.com\.tr", ""
+            $NameStr = $NameStr -replace "\.[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+", ""
             $PortsJS = if ($Res.OpenPorts) { $Res.OpenPorts -join "," } else { "" }
             
             $NameStyle = if ($Res.IsCustom) { "color:#38bdf8; font-weight:700;" } else { "" }
@@ -496,4 +496,5 @@ try {
 } catch {
     Write-Log "KRİTİK HATA: $($_.Exception.Message)" "HATA"
     Read-Host "Hata oluştu. Enter'a bas..."
+
 }

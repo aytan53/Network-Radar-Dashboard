@@ -2,7 +2,7 @@
 
 **Network Radar** is a portable, single-file **Network Monitoring & Management Dashboard** built entirely with PowerShell. It enables IT administrators to visualize network status, monitor latency, and access devices instantly without any installation or third-party agents.
 
-![Dashboard Screenshot](screenshot.png)
+![Dashboard Screenshot](radar_screenshot.png)
 
 ## 🚀 Features
 
